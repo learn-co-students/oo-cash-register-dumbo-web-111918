@@ -5,7 +5,7 @@ describe 'CashRegister' do
   describe '::new' do
     it 'sets an instance variable @total on initialization to zero' do
       expect(cash_register.instance_variable_get(:@total)).to eq(0)
-    end
+  end
 
     it 'optionally takes an employee discount on initialization' do
       expect(cash_register_with_discount.discount).to eq(20)
